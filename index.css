@@ -67,15 +67,15 @@ body {
   background-color: aliceblue;
 
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 48px;
   margin-inline: auto;
-  padding:60px ;
+  
+ 
 }
 
 .img_container {
-  /* width: 615.178px;
-  height: 408.262px; */
+
   background-image: url(./images/Humaaans\ Wireframe.png),
     lightgray 50% / contain no-repeat;
   mix-blend-mode: multiply;
@@ -84,13 +84,12 @@ body {
 .login{
   
     justify-content: center;
-    /* padding:50px; */
     gap:42px;
+    margin: 30px;
+    
 }
 
-form{
 
-}
 
 .h {
   font-size: 24px;
@@ -182,6 +181,7 @@ align-items: flex-end;
 
   body{
     display: flex;
+    margin: 50px;
   }
   
 }
