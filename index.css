@@ -120,7 +120,6 @@ form{
 }
 
 .btn_container{
-  background-color: beige;
   display: flex;
   gap:25%;
   margin-top: 40px;
@@ -162,6 +161,7 @@ input{
 .ac{
  width: auto;
 }
+
 .ac_cr{
   color:white;
   background-color: rgb(5, 5, 30);
@@ -169,4 +169,19 @@ input{
  border-width: 0;
   width: 100%;
   font-style: bold;
+}
+
+.t_name{
+align-items: flex-start;
+}
+.t_mail{
+align-items: flex-end;
+}
+
+@media (min-width: 1024px) {
+
+  body{
+    display: flex;
+  }
+  
 }
