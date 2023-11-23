@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* flex-direction: column;  when applied with display-inline:flex; will 
+--Properties:row,column,column-reverse,row-reverse
+
+flex-wrap
+--Properties:wrap, nowrap(default), wrap-reverse
+
+flex-flow shorthand for flex direction and flexwrap i.e it does both
+--Properties: the same properties for flex-direction and flex-wrap
+--syntaxt: flex-flow: flex-direction flex-wrap
+
+
+justify-content(baseline does not work with justify contetent)
+--Properties: flex-start(default), flex-end, center, space-between,space-around
+
+align-items
+--Properties: stretch(default), center, flex-start(jumps to the top left of the page), flex-end, baseline 
+
+align-content(similar to align -items)
+--Properties: 
+
+
+place-content(for working with flex, shorthand for justify  content and align content)
+--Properties:
+-syntax: align-content justify-content 
+
+
+Certainly! Let's break down the HTML and CSS details you provided, focusing on their basic use/function, and where they are ideally used:
+
+1. flex-direction
+Basic Use/Function: Specifies the direction of the flexible items inside a flex container. It defines the main axis along which the flex items are placed.
+How and Where Ideally Used: It is often applied to a container using the display: flex property. For example, flex-direction: column; will stack the items vertically.
+Conflicts with Other Properties: When applied with display: inline-flex, it will not work as expected because inline-flex makes the container inline, and flex-direction might be overridden.
+2. flex-wrap
+Basic Use/Function: Defines whether the flex container should wrap the flex items onto multiple lines or not.
+How and Where Ideally Used: It is applied to a flex container and is useful when there are more items than can fit on a single line.
+Conflicts with Other Properties: It might conflict with flex-direction if not used carefully. For example, when using flex-direction: row and flex-wrap: wrap, items will wrap to the next line when the container is not wide enough.
+3. flex-flow (shorthand for flex-direction and flex-wrap)
+Basic Use/Function: It's a shorthand property for setting both flex-direction and flex-wrap in a single declaration.
+How and Where Ideally Used: It's convenient when you want to set both properties simultaneously. The syntax is flex-flow: flex-direction flex-wrap;.
+4. justify-content
+Basic Use/Function: Defines how the browser distributes space between and around content items along the main axis of the container.
+How and Where Ideally Used: It is applied to the flex container. Common values include flex-start, flex-end, center, space-between, and space-around.
+Conflicts with Other Properties: It does not directly conflict with other properties. However, be aware that some values, like baseline, might not work as expected in certain situations.
+5. align-items
+Basic Use/Function: Specifies the default alignment for items inside the flex container along the cross-axis.
+How and Where Ideally Used: It is applied to the flex container. Common values include stretch, center, flex-start, flex-end, and baseline.
+Conflicts with Other Properties: It might not conflict directly, but the alignment might be affected if there are conflicting properties on child elements.
+6. align-content
+Basic Use/Function: Aligns a flex container's lines within the flex container when there is extra space in the cross-axis.
+How and Where Ideally Used: It is applied to the flex container. It's used when you have multiple lines of flex items.
+Conflicts with Other Properties: Similar to align-items, it might be affected by conflicting properties on child elements.
+7. place-content (shorthand for working with flex, shorthand for justify-content and align-content)
+Basic Use/Function: It's a shorthand for setting both justify-content and align-content in a single declaration.
+How and Where Ideally Used: It's used on the flex container. It's a convenient way to set both properties simultaneously.
+Conflicts with Other Properties: Similar to individual properties, it might be affected by conflicting properties on child elements.
+
+*/
+
+body {
+  display: grid;
+  background-color: aliceblue;
+  /* place-content: center center; */
+  align-items: center;
+  justify-content: center;
+  margin: 48px;
+  margin-inline: auto;
+  padding:60px ;
+}
+
+.img_container {
+  /* width: 615.178px;
+  height: 408.262px; */
+  background-image: url(./images/Humaaans\ Wireframe.png),
+    lightgray 50% / contain no-repeat;
+  mix-blend-mode: multiply;
+}
+
+.login{
+  /* justify-content: center; */
+   /* display: flex; */
+    justify-content: center;
+    gap:42px
+}
+
+form{
+/* justify-content: center; */
+}
+
+.h {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+}
+
+.btn {
+  /* padding: 10px; */
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: rgb(5, 5, 30);
+  background-color: rgb(124, 199, 199);
+  display: flex;
+  align-items:center;
+  padding: 12px 6.3px;
+  display:flexbox;
+  gap:12px;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+           
+}
+
+.btn_container{
+  display: flex;
+  gap:25.5px;
+  margin-top: 40px;
+  margin-left: 50px;
+  /* margin-right: 50px; */
+}
+
+.details{
+  /* width: 30%; */
+}
+
+.contact{
+  display:flex;
+  gap: 20px;
+}
+
+
+input{
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: rgb(5, 5, 30);
+  background-color: rgb(124, 199, 199);
+  height: 40px;
+  padding: 12px 6.3px;
+}
+
+.pass{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  width: auto;
+}
+.ps{
+  width: 100%;
+}
+
+.ac{
+ width: auto;
+}
+.ac_cr{
+  color:white;
+  background-color: rgb(5, 5, 30);
+  border-color: none;
+ border-width: 0;
+  width: 100%;
+  font-style: bold;
+}
