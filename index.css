@@ -65,7 +65,7 @@ Conflicts with Other Properties: Similar to individual properties, it might be a
 body {
   display: grid;
   background-color: aliceblue;
-  /* place-content: center center; */
+
   align-items: center;
   justify-content: center;
   margin: 48px;
@@ -82,14 +82,14 @@ body {
 }
 
 .login{
-  /* justify-content: center; */
-   /* display: flex; */
+  
     justify-content: center;
-    gap:42px
+    /* padding:50px; */
+    gap:42px;
 }
 
 form{
-/* justify-content: center; */
+
 }
 
 .h {
@@ -101,7 +101,7 @@ form{
 }
 
 .btn {
-  /* padding: 10px; */
+
   border-radius: 10px;
   border-width: 5px;
   border-color: rgb(5, 5, 30);
@@ -120,20 +120,23 @@ form{
 }
 
 .btn_container{
+  background-color: beige;
   display: flex;
-  gap:25.5px;
+  gap:25%;
   margin-top: 40px;
-  margin-left: 50px;
-  /* margin-right: 50px; */
+  margin: 50px;
+  margin-inline: center;
+  
 }
 
 .details{
-  /* width: 30%; */
+  margin: 50px;
 }
 
 .contact{
+  width: 100%;
   display:flex;
-  gap: 20px;
+  gap: 20%;
 }
 
 
