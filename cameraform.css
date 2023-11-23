@@ -69,6 +69,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 48px;
+  margin-inline: auto;
+  padding:60px ;
 }
 
 .img_container {
@@ -81,6 +83,9 @@ body {
 
 .login{
   /* justify-content: center; */
+   /* display: flex; */
+    justify-content: center;
+    gap:42px
 }
 
 form{
@@ -122,6 +127,10 @@ form{
   /* margin-right: 50px; */
 }
 
+.details{
+  /* width: 50%; */
+}
+
 .contact{
   display:flex;
   gap: 20px;
@@ -134,9 +143,27 @@ input{
   border-color: rgb(5, 5, 30);
   background-color: rgb(124, 199, 199);
   height: 40px;
+  padding: 12px 6.3px;
 }
 
 .pass{
   margin-top: 20px;
+  margin-bottom: 20px;
   flex-direction: row;
+  width: auto;
+}
+.ps{
+  width: 100%;
+}
+
+.ac{
+ width: auto;
+}
+.ac_cr{
+  color:white;
+  background-color: rgb(5, 5, 30);
+  border-color: none;
+ border-width: 0;
+  width: 100%;
+  font-style: bold;
 }
